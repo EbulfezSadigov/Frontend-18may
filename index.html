@@ -17,20 +17,27 @@
 </head>
 
 <body>
+    <style>
+        .list-group-item span {
+            font-weight: 500 !important;
+        }
+    </style>
     <div class="container">
-        <h1 class="my-5">What is your plan today?</h1>
-        <div class="row mb-2">
+        <h1 class="my-5">What is your plan for today?</h1>
+        <div class="row mb-3">
             <div class="col-md-8">
                 <input type="text" class="form-control task-title" placeholder="Task">
             </div>
             <div class="col-md-4">
-                <button type="button" class="btn btn-success d-block w-100 add-task">Add Task!</button>
+                <button id="add-task" type="button" class="btn btn-success d-block w-100 ">Add Task!</button>
             </div>
         </div>
-        <div class="tasks">
+        <div class="tasks mb-3">
             <ul class="list-group">
             </ul>
         </div>
+        <button id="remove-task" type="button" class="btn btn-danger d-none">Delete All Tasks!</button>
+        <button id="remove-selected-task" type="button" class="btn btn-warning d-none">Delete Selected Tasks!</button>
     </div>
     <script src="main.js"></script>
 </body>
